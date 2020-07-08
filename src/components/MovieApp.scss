@@ -1,0 +1,12 @@
+*{ margin:0; padding: 0;}
+.MovieApp {
+    width: 1300px;
+    margin: 40px auto;
+    header {
+        height: 100px;
+        background-color: greenyellow;
+    }
+    .MovieApp_content {
+        display:flex;
+    }
+}
