@@ -7,7 +7,7 @@ class MovieApp extends Component {
     render() {
         return (
             <div className="MovieApp">
-                <header>Movie</header>
+                <header>Movie App</header>
                 <div className="MovieApp_content">
                 <MovieNav />
                 <MovieForm />

@@ -1,0 +1,97 @@
+[
+    {
+        "no":1, 
+        "poster":"https://img.megabox.co.kr/SharedImg/2020/03/11/Qgl73W9FxEMYJnnaOYPFtyqSrqB3vmJ2_420.jpg", 
+        "title":"라라랜드", 
+        "date":"2020.03.25",
+        "actor":"엠마 스톤",
+        "director":"데이미언 셔젤",
+        "rate": 8.91
+    },
+    {
+        "no":2, 
+        "poster":"https://img.megabox.co.kr/SharedImg/2020/06/02/akWU2DySTuYmkWhyy3QuvPdM2r0m99NF_420.jpg", 
+        "title":"인비저블 라이프", 
+        "date":"2020.05.24",
+        "actor":"줄리아 스토클러",
+        "director":"카림 아이노우즈",
+        "rate": 8.83
+
+    },
+    {
+        "no":3, 
+        "poster":"https://img.megabox.co.kr/SharedImg/2020/02/21/IyeZJvAzV3QgEoW4F7HzdS97zfLYfcni_420.jpg", 
+        "title":"1917", 
+        "date":"2020.02.19",
+        "actor":"조지 맥케이",
+        "director":"샘 멘데스",
+        "rate": 9.04
+    },
+    {
+        "no":4, 
+        "poster":"https://img.megabox.co.kr/SharedImg/asis/system/mop/poster/2017/D0/D558A7-DE6C-4178-B3F6-27A023AA5DEE.large.jpg", 
+        "title":"위대한쇼맨", 
+        "date":"2020.03.25",
+        "actor":"휴 잭맨",
+        "director":"마이클 그레이시",
+        "rate": 9.31
+    },
+    {
+        "no":5, 
+        "poster":"https://img.megabox.co.kr/SharedImg/2020/06/17/4UNWGNdt9939BUiWfXsJk9jWNGdVejsH_420.jpg", 
+        "title":"다크나이트", 
+        "date":"2020.05.01",
+        "actor":"크리스찬 베일",
+        "director":"크리스토퍼 놀란",
+        "rate": 9.65
+    },
+    {
+        "no":6, 
+        "poster":"https://img.megabox.co.kr/SharedImg/asis/system/mop/poster/2020/73/C2E59B-7D34-4220-8D51-580299453B88.large.jpg", 
+        "title":"작은아씨들", 
+        "date":"2020.03.25",
+        "actor":"시얼샤 로넌",
+        "director":"그레타 거윅",
+        "rate": 9.13
+      
+    },
+    {
+        "no":7, 
+        "poster":"https://img.megabox.co.kr/SharedImg/2020/06/30/Nay6ifHxMDosQGb8O8jyTyb6W71p1Bzm_420.jpg", 
+        "title":"인베이젼", 
+        "date":"2020.07.01",
+        "actor":"알렉산더 페트로브",
+        "director":"표도르 본다르추크",
+        "rate": 7.5
+      
+    },
+    {
+        "no":8, 
+        "poster":"https://img.megabox.co.kr/SharedImg/2020/07/03/MB4Nfvj2Nv4y65ZVLcEqUQwC5pKtRVDt_420.jpg", 
+        "title":"레옹: 디 오리지널", 
+        "date":"2020.06.08",
+        "actor":"나탈리 포트만",
+        "director":"뤽 배송",
+        "rate": 8.5
+    },
+    {
+        "no":9, 
+        "poster":"https://img.megabox.co.kr/SharedImg/2020/06/25/3gb42ssCByzttkbWdwXtePY3L4DIQjTW_420.jpg", 
+        "title":"밤쉘", 
+        "date":"2020.07.08",
+        "actor":"니콜 키드먼",
+        "director":"제이 로치",
+        "rate": 9.44
+
+    },
+    {
+        "no":10, 
+        "poster":"https://img.megabox.co.kr/SharedImg/2020/06/17/WBal1eb3BaxOXCC2wJHNPHGcvmHRoruU_420.jpg", 
+        "title":"딥 워터", 
+        "date":"2020.07.09",
+        "actor":"모아 감멜",
+        "director":"요아힘 헤덴",
+        "rate": 7
+    }
+
+]

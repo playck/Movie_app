@@ -2,5 +2,17 @@
 .MovieForm {
     width: 1000px;
     height: 100vh;
-    background-color: skyblue;
+    border: 1px solid black;
+    overflow: auto;
+    background-color: rgba(238, 238, 238, 0.8);
+    ul {
+        display: flex;
+        margin: 20px;
+        justify-content: center;
+        li {
+            list-style: none;
+            margin: 20px 40px;
+            font-size: 20px;
+        }
+    }
 }
