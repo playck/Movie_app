@@ -13,6 +13,7 @@ class Movie_oversea extends Component {
         flg: false,
         findData : {}
     }
+
     handleOpen = (no) => {
         this.setState({
             findData : this.state.Movies.find( item => item.no === no),
@@ -25,6 +26,36 @@ class Movie_oversea extends Component {
             flg: false
         })
     }
+
+    handleAdd = (no) => {
+        const { Movies } = this.state
+        this.setState({
+            Movies : Movies.map(item => {
+                if ( item.no === no) {
+                    return {
+                        ...item , 
+                        count : item.count + 1
+                    }
+                } else {
+                    return item
+                }
+            })
+        })
+    }
+
+    componentDidMount() {
+        const { Movies } = this.state
+        this.setState({
+            Movies : Movies.map (item => {
+                return {
+                    ...item ,
+                    count : 0,
+                }
+            })
+        })
+    }
+    
+
     render() {
         const { Movies , flg , findData} = this.state
         return (
@@ -47,7 +78,7 @@ class Movie_oversea extends Component {
                             <div className="card_nav">
                             <a onClick={ () => this.handleOpen(movie.no)}><span><FontAwesomeIcon icon={ faVideo }/> 예고편</span></a>
                             <a href="https://www.megabox.co.kr/" target="_blank"><span><FontAwesomeIcon icon={ faTicketAlt }/> 예매하기</span></a>
-                            <a><span><FontAwesomeIcon icon={ faThumbsUp }/> 10</span></a>
+                            <a onClick={ () => this.handleAdd(movie.no)}><span><FontAwesomeIcon icon={ faThumbsUp }/> {movie.count}</span></a>
                             </div>
                         </div>
                     </article>
