@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Data from './Data.json'
-import './Movie_oversea.scss'
+import Data from './Data.json';
+import './Movie_oversea.scss';
 import Modal from './Modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
@@ -11,7 +11,8 @@ class Movie_oversea extends Component {
     state = {
         Movies : Data,
         flg: false,
-        findData : {}
+        findData : {},
+        text: ''
     }
 
     handleOpen = (no) => {
