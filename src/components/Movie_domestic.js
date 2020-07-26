@@ -7,7 +7,7 @@ import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
 import { faVideo } from '@fortawesome/free-solid-svg-icons';
 import { faTicketAlt } from '@fortawesome/free-solid-svg-icons';
 
-class Movie_oversea extends Component {
+class Data_domestic extends Component {
     state = {
         Movies : Data_dome,
         flg: false,
@@ -91,4 +91,4 @@ class Movie_oversea extends Component {
     }
 }
 
-export default Movie_oversea;
+export default Data_domestic;

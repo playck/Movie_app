@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Data from './Data.json';
+import Data_oversea from './Movie_Data/Data_oversea.json';
 import './Movie_oversea.scss';
 import Modal from './Modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,7 +9,7 @@ import { faTicketAlt } from '@fortawesome/free-solid-svg-icons';
 
 class Movie_oversea extends Component {
     state = {
-        Movies : Data,
+        Movies : Data_oversea,
         flg: false,
         findData : {},
         text: ''
