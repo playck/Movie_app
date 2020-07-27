@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './MovieApp.scss'
 import MovieNav from './MovieNav';
 import MovieForm from './MovieForm';
+import Movie_All from './Movie_All';
 
 class MovieApp extends Component {
     render() {
@@ -9,7 +10,6 @@ class MovieApp extends Component {
             <div className="MovieApp">
                 <header>Movie App</header>
                 <div className="MovieApp_content">
-                <MovieNav />
                 <MovieForm />
                 </div>
             </div>

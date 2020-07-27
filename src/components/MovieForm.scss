@@ -15,15 +15,19 @@
             font-size: 20px;
         }
     }
-    .MovieSearch {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 10px;;
-        input {
-            width: 300px; 
-            height: 50px;
-            border: 1px solid #dcdcdc;
-            padding-left: 20px;
-            }
-        }
+    .Movie_All.on {
+        display: none;
     }
+}
+    // .MovieSearch {
+    //     display: flex;
+    //     justify-content: center;
+    //     margin-bottom: 10px;;
+    //     input {
+    //         width: 300px; 
+    //         height: 50px;
+    //         border: 1px solid #dcdcdc;
+    //         padding-left: 20px;
+    //         }
+    //     }
+    // }

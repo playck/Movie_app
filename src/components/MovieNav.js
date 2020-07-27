@@ -1,19 +1,13 @@
-import React, { Component } from 'react';
-import './MovieNav.scss';
-import { Link, Route } from 'react-router-dom';
-import Movie_All from './Movie_All';
-import Movie_domestic from './Movie_domestic';
-import Movie_oversea from './Movie_oversea';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-
-class MovieNav extends Component {
-    render() {
-        return (
-            <div className="MovieNav">
-                Nav
-            </div>
-        );
-    }
+function Navigtion() {
+    return (
+        <div className="MovieNav">
+            <Link to="/MovieForm">국/내외 인기영화</Link>
+            <Link to="/MovieForm_day">일별 영화순위 조회</Link>
+        </div>
+    )
 }
 
-export default MovieNav;
+export default Navigtion;
