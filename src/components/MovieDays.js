@@ -7,15 +7,7 @@ class MovieDays extends Component {
     state = {
         isLoading: true,
         weeklyBoxOfficeList: [],
-        text: '',
-    }
-
-    handleChange = (e) => {
-        const {name, value} = e.target
-        this.setState({
-            [name] : value
-        })
-        console.log(value)
+        date: "20200809"
     }
 
     getMovies = async () => {
@@ -24,23 +16,31 @@ class MovieDays extends Component {
             boxOfficeResult: {weeklyBoxOfficeList}
           }
         }
-        = await axios.get(`https://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchWeeklyBoxOfficeList.json?key=430156241533f1d058c603178cc3ca0e&targetDt=20200726`)
+        = await axios.get(`https://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchWeeklyBoxOfficeList.json?key=430156241533f1d058c603178cc3ca0e&targetDt=${this.state.date}`)
         console.log(weeklyBoxOfficeList)
         this.setState({weeklyBoxOfficeList, isLoading: false})
     }
 
+    week = () => {
+        this.setState({
+            date: parseInt(this.state.date) - 7
+        })
+    }
+
     componentDidMount() {
-        this.getMovies()
-    }    
+        this.getMovies(this.state.date)
+    }        
 
     render() {
         const { isLoading , weeklyBoxOfficeList , text }  = this.state
         return (
             <div>
                 <section className="container"> 
+                <div>
+                <h2> 주간 영화 순위 </h2>
+                <p class="date"> 기준 날짜: {this.state.date } </p>
+                    <div>
                 {isLoading ? (<div className="loader"><span>영화 목록을 가져오고 있습니다..</span></div>) : (<div className="movie">
-                <input type="text" name="text" value= {text}
-                 onChange={this.handleChange}/>
                 {
                     weeklyBoxOfficeList.map((movie) => 
                        <div className="movielist"> 
@@ -57,6 +57,8 @@ class MovieDays extends Component {
                 }
 
                 </div>)}
+                    </div>
+                </div>
                 </section>
             </div>
         );

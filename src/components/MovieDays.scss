@@ -1,9 +1,17 @@
 .container {
     display: flex;
     justify-content: center;
+    h2 {
+        text-align: center;
+        margin: 10px;
+    }
+    .date {
+        text-align: center;
+    }
     .movielist {
         display: flex;
         margin-top: 20px;
+        margin-bottom: 20px;
         padding: 20px 40px;
         border: 1px solid none;
         font-size: 25px;
