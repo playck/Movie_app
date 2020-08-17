@@ -7,7 +7,7 @@ class MovieDays extends Component {
     state = {
         isLoading: true,
         weeklyBoxOfficeList: [],
-        date: "20200809"
+        date: "20200816"
     }
 
     getMovies = async () => {
