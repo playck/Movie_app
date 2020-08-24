@@ -7,7 +7,7 @@ class MovieDays extends Component {
     state = {
         isLoading: true,
         weeklyBoxOfficeList: [],
-        date: "20200816"
+        date: "20200823"
     }
 
     getMovies = async () => {
@@ -19,12 +19,6 @@ class MovieDays extends Component {
         = await axios.get(`https://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchWeeklyBoxOfficeList.json?key=430156241533f1d058c603178cc3ca0e&targetDt=${this.state.date}`)
         console.log(weeklyBoxOfficeList)
         this.setState({weeklyBoxOfficeList, isLoading: false})
-    }
-
-    week = () => {
-        this.setState({
-            date: parseInt(this.state.date) - 7
-        })
     }
 
     componentDidMount() {

@@ -27,7 +27,7 @@ class MovieForm extends Component {
                     <li><Link to="/Movie_All">전체</Link></li>
                     <li><Link to="/Movie_domestic">국내</Link></li>
                     <li><Link to="/Movie_oversea">해외</Link></li>
-                    <li><Link to="/MovieDays"> 일별 인기순위 </Link></li>
+                    <li><Link to="/MovieDays"> 주간 인기순위 </Link></li>
                 </ul>
                 <div className={`Movie_All ${flg && 'on'}`}><Movie_All /></div>
                 <Route path="/Movie_All" exact component={Movie_All} />
