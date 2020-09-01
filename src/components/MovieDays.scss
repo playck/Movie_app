@@ -8,6 +8,28 @@
     .date {
         text-align: center;
     }
+    .inputBox {
+        display: flex;
+        justify-content: center;
+        input {
+            margin-top: 10px;
+            width: 250px;
+            height: 30px;
+            padding-left: 5px;
+        }
+        button {
+            margin-top: 10px;
+            margin-left: 5px;
+            height: 35px;
+            width: 30px;
+            cursor: pointer;
+        }
+    }
+    .loader {
+        text-align: center;
+        margin-top: 5px;
+        font-size: 20px;
+    }
     .movielist {
         display: flex;
         margin-top: 20px;
@@ -16,9 +38,9 @@
         border: 1px solid none;
         font-size: 25px;
         background-color: white;
-        .movie-info {
+        .movie_info {
             margin-left: 15px;
-            .movie-detali {
+            .movie_detali {
                 font-size: 16px;
             }
         }

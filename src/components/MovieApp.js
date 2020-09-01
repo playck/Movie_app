@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './MovieApp.scss'
 import MovieForm from './MovieForm';
-import Movie_All from './Movie_All';
 
 class MovieApp extends Component {
     render() {

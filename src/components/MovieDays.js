@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './MovieDays.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+
+
 
 class MovieDays extends Component {
 
     state = {
         isLoading: true,
         weeklyBoxOfficeList: [],
-        date: "20200823"
+        date: "",
     }
 
     getMovies = async () => {
@@ -17,33 +21,42 @@ class MovieDays extends Component {
           }
         }
         = await axios.get(`https://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchWeeklyBoxOfficeList.json?key=430156241533f1d058c603178cc3ca0e&targetDt=${this.state.date}`)
-        console.log(weeklyBoxOfficeList)
         this.setState({weeklyBoxOfficeList, isLoading: false})
     }
 
-    componentDidMount() {
-        this.getMovies(this.state.date)
-    }        
+    handleChange = (e) => {
+            this.setState ({
+            date: e.target.value
+        })
+    }
+
+    handleClick = () => {
+        this.getMovies()
+    } 
 
     render() {
-        const { isLoading , weeklyBoxOfficeList , text }  = this.state
+        const { isLoading , weeklyBoxOfficeList , date  }  = this.state
         return (
             <div>
                 <section className="container"> 
                 <div>
-                <h2> 주간 영화 순위 </h2>
-                <p class="date"> 기준 날짜: {this.state.date } </p>
+                <h2> 영화 인기 순위 </h2>
+                <p className="date"> 검색 날짜: { date } </p>
+                <div className="inputBox">
+                    <input type="text" onChange={this.handleChange} placeholder="( 예: 20200701 )"/>
+                    <button onClick={this.handleClick}><FontAwesomeIcon icon={ faSearch }/></button>
+                </div>
                     <div>
-                {isLoading ? (<div className="loader"><span>영화 목록을 가져오고 있습니다..</span></div>) : (<div className="movie">
+                {isLoading ? (<div className="loader"><span>원하는 날짜를 입력해주세요</span></div>) : (<div className="movie">
                 {
                     weeklyBoxOfficeList.map((movie) => 
                        <div className="movielist"> 
                             {movie.rank}
-                            <div className="movie-info">
+                            <div className="movie_info">
                                 {movie.movieNm} 
-                                <div className="movie-detali">
+                                <div className="movie_detali">
                                 <p>개봉일 : {movie.openDt}</p>
-                                <p>관객수 :  {movie.audiAcc} 명</p>
+                                <p>관객수 : {movie.audiAcc} 명</p>
                                 </div>
                             </div>
                         </div>
