@@ -20,7 +20,7 @@ class MovieDays extends Component {
             boxOfficeResult: {weeklyBoxOfficeList}
           }
         }
-        = await axios.get(`https://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchWeeklyBoxOfficeList.json?key=430156241533f1d058c603178cc3ca0e&targetDt=${this.state.date}`)
+        = await axios.get(`https://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchWeeklyBoxOfficeList.json?key=f73424077cfe12471436e35f8633ace8&targetDt=${this.state.date}`)
         this.setState({weeklyBoxOfficeList, isLoading: false})
     }
 

@@ -26,3 +26,9 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 458px) {
+    .MovieForm {
+        height: 100%;
+    }
+}
