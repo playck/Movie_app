@@ -13,12 +13,13 @@
             list-style: none;
             margin: 20px 40px;
             font-size: 20px;
-            :hover { background-color: #111; color: #eee}
+            :hover { 
+                     border-bottom: 1px solid #111;
+            }
             a {
             text-decoration: none;
-            color: #000000;
+            color: #111;
             padding: 10px;
-            border-radius: 25%;
             }
         }
     }
@@ -27,7 +28,7 @@
     }
 }
 
-@media screen and (max-width: 458px) {
+@media screen and (max-width: 512px) {
     .MovieForm {
         height: 100%;
     }
