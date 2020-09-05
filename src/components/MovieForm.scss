@@ -28,8 +28,34 @@
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .MovieForm {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .MovieForm {
+        width: 100%;
+        ul {
+            margin: 8px;
+            li {
+                font-size: 16px;
+            }
+        }
+    }
+
+}
+
 @media screen and (max-width: 512px) {
     .MovieForm {
+        width: 100%;
         height: 100%;
+        ul {
+            flex-direction: column;
+            li {
+            text-align: center;
+            }
+        }
     }
 }

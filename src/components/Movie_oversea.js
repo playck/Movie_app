@@ -15,6 +15,8 @@ class Movie_oversea extends Component {
         text: ''
     }
 
+    // 예고편 모달창 띄우기
+
     handleOpen = (no) => {
         this.setState({
             findData : this.state.Movies.find( item => item.no === no),
@@ -22,11 +24,15 @@ class Movie_oversea extends Component {
         })
     }
 
+    //예고편 모달창 닫기
+
     handleClose = () => {
         this.setState({
             flg: false
         })
     }
+
+    // 좋아요 UP 기능
 
     handleAdd = (no) => {
         const { Movies } = this.state
@@ -68,8 +74,8 @@ class Movie_oversea extends Component {
                         <img src={movie.poster}/>  
                         <div>
                             <h3>{movie.title}</h3>
-                            <h4>감독: {movie.director}</h4>
-                            <h4>출연: {movie.actor}</h4>
+                            <p>감독: {movie.director}</p>
+                            <p>출연: {movie.actor}</p>
                             <p>개봉일: {movie.date} </p>
                             <p>평점: {movie.rate}</p>
                         </div>

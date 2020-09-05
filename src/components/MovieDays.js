@@ -14,6 +14,8 @@ class MovieDays extends Component {
         date: "",
     }
 
+    // 영화진흥위원회 API 가져오기
+
     getMovies = async () => {
         const {
           data: {
