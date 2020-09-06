@@ -10,8 +10,7 @@ class Modal extends Component {
                 <div>
                 <iframe width="100%" height="100%" src={"https://www.youtube.com/embed/" + findData.key} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <a href="#" className="close" onClick={onClose}>X</a>
-
+                <div className="close" onClick={onClose}>X</div>
             </div>
         );
     }

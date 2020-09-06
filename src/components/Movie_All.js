@@ -32,7 +32,7 @@ class Movie_All extends Component {
         })
     }
 
-    //// 좋아요 UP 기능
+    // 좋아요 UP 기능
 
     handleAdd = (no) => {
         const { Movies } = this.state

@@ -1,10 +1,10 @@
 .Modal {
-    width: 600px; height: 450px; position: absolute; left: 50% ; top: 60%;
+    width: 600px; height: 400px; position: absolute; left: 50% ; top: 60%;
     background: #fff; border: 1px solid #000; transform: translate(-50%, -50%); 
     padding:30px ;  display: none; 
 
     h2 { 
-        font-size: 40px;
+        font-size: 1.3rem;
         margin-bottom: 15px ;
     }
     div {
@@ -13,31 +13,52 @@
     }
 
     .close {
-        position: absolute; right: 30px; top: 30px;
+        position: absolute; right: 30px; top: 25px;
         text-decoration: none; color: #000;
-        display: block; width: 50px; height: 50px;
-        text-align: center; line-height: 50px;
-        font-size: 40px; background: #dcdcdc;
+        display: block; width: 50px; height: 40px;
+        text-align: center; line-height: 40px;
+        font-size: 30px; background: #dcdcdc;
     }
 }
 .Modal.on { display: block;}
 
 @media screen and (max-width: 1024px) {
     .Modal {
-        left: 65%;
+        top: 45%;
+        left: 50%;
     }
 }
 
 @media screen and (max-width: 768px) {
     .Modal {
-        left: 85%
+        width: 400px; height: 350px;
+        left: 50%;
+
+        div {
+            height: 300px;
+        }
+        .close {
+            height: 35px;
+            font-size: 25px;
+            line-height: 35px;
+        }
     }
 }
 
 @media screen and (max-width: 512px) {
     .Modal {
-        top: 100%;
-        left: 640px;
+        width: 250px; height: 300px;
+        left: 50%; top: 90%;
+
+        div {
+            height: 250px;
+        }
+        .close {
+            top: 30px;
+            height: 30px;
+            font-size: 20px;
+            line-height: 30px;
+        }
     }
 }
 
